@@ -1,5 +1,5 @@
 # Prompter
-A tool to help format LLM prompts dynamically
+a simple tool to help format LLM prompts dynamically
 
 ## usage
 
@@ -32,11 +32,13 @@ prompt = prompter.update("prompt2", {
 ```javascript
 const prompter = require("@ryanforever/prompter")
 
+// in line text prompt
 let prompt1 = prompter.fromText("hello {{username}}", {
 	username: "ryan forever"
 })
 
-let prompt 2 = prompter.fromFile("./my-prompt.txt", {
+// read prompt text from a file instead
+let prompt2 = prompter.fromFile("./my-prompt.txt", {
 	currentDate: new Date(Date.now())
 })
 ```
