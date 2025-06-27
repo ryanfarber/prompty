@@ -1,0 +1,3 @@
+hello {{name}}.  how are you today?
+the current date is {{date}}.
+i feel {{mood}}
