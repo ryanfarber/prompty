@@ -1,5 +1,5 @@
 # Prompter
-A tool to help format prompts dynamically
+A tool to help format LLM prompts dynamically
 
 ## usage
 
@@ -30,7 +30,6 @@ prompt = prompter.update("prompt2", {
 
 ## tools
 ```javascript
-
 const prompter = require("@ryanforever/prompter")
 
 let prompt1 = prompter.fromText("hello {{username}}", {
